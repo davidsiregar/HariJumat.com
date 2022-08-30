@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+	<nav>
+		<div class="containerr nav_containerr">
+		<a href="index.html"><h3><img src="logo-hariapa.png" alt="logo" height="80px" width="120px"></h3></a>
+		  <ul class="nav_menu">
+			<li><a href="index.html">Dashboard</a></li>
+			<li><a href="kelas.html">Kelas</a></li>
+			<li><a href="hubungiKami.html">Hubungi Kami</a></li>
+			<li><a href="login.html">Masuk/Daftar</a></li>
+		  </ul>
+		</div>
+	</nav>
+
+	  <!-- masuk daftar -->
+<content><div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" id="registName" placeholder="Name" />
+			<input type="email" id="registEmail" placeholder="Email" />
+			<input type="password" id="registPassword" placeholder="Password" />
+			<button type="button" onclick="signUp()">Sign Up</button>
+		</form>
+	</div>
+
+
+	<!-- masuk login -->
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<input type="email" id="email" placeholder="Email" />
+			<input type="password" id="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button type="button" onclick="signIn()">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal details</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hi There!</h1>
+				<p>Enter your personal details to open an account with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+</content>
+
+<!-- footer -->
+<footer class="footer">
+	<div class="containerrr">
+		<div class="row">
+			<div class="footer-col">
+				<h4>Kelompok 5</h4>
+				<ul>
+					<li>Carakka Wijaya - </li>
+					<li>David Siregar - </li>
+					<li>Denis Rahmadi - </li>
+					<li>Fachrul Rasyid - </li>
+					<li>Farid Al Farras Raihan - </li>
+					<li>Kusuma Puspa A. - </li>
+					<li>Rizky Ade Jazman K </li>
+				</ul>
+			</div>
+		</div>
+</footer>
+
+<script src="login.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --color-primary: #0dad8e;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #0dad8e;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: #f7f9fa;
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #001859;
+    --color-bg2: #424890;
+  
+    --container-width-lg: 80%;
+  
+    --transition: all 400ms ease;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: var(--color-black);
+    background: var(--color-white);
+  }
+  .container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+  section {
+    padding: 6rem 0;
+  }
+  section h2 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    line-height: 1.2;
+  }
+  h1 {
+    font: size 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  a {
+    color: var(--color-white);
+  }
+  img {
+    width: 100%; /*100% of its parents width */
+    display: block;
+    object-fit: cover;
+  }
+  .btn {
+    display: inline-block;
+    background: var(--color-white);
+    color: var(--color-black);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: var(--transition);
+    font-size: 1.1rem;
+  }
+  .btn:hover {
+    background: transparent;
+    color: var(--color-danger);
+    border-color: var(--color-white);
+  }
+  .btn-primary {
+    background: var(--color-danger);
+    color: var(--color-light);
+  }
+  /* ------------------------NAVBAR-----------------------*/
+  nav {
+    background: var(--color-);
+    width: 100vw; /* width akan ngambil keseluruhan width layar, apapun devicenya*/
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11; /* navbar akan selalu jadi paling atas, nilai besar semakin keatas, nilai kecil semakin kebawah*/
+  }
+  
+  .nav_container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    gap: 2rem;
+  }
+  
+  .nav_menu a {
+    font-size: 1.2rem;
+    transition: var(--transition);
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  .nav_menu a:hover {
+    text-shadow: 8px 8px 15px rgba(7, 60, 222, 0.9);
+  }
+  .b {
+    color: green;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+  /* ------------------Popular Courses--------------------*/
+  
+  .courses h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  input::-webkit-search-cancel-button {
+    display: none;
+  }
+  .courses input {
+    font-size: 1.6rem;
+    width: 30%;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #4b4b4b;
+  }
+  .fullcourse {
+    margin-top: 5rem;
+    margin-left: 0px;
+  }
+  .course h4 a {
+    color: #000;
+  }
+  .courses_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .course {
+    background: var(--color-light);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    /* border-radius: 1rem; */
+    /* filter: saturate(0); */
+  }
+  .course:hover {
+    background: transparent;
+    border-color: var(--color-success);
+    box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transform: scale(1.1);
+    /* border-radius: 1rem; */
+    /* filter: none; */
+  }
+  /* .course img {
+    border-radius: 1rem;
+    filter: saturate(0);
+  }
+  .course img:hover {
+    filter: none;
+  } */
+  .course_info {
+    padding: 2rem;
+  }
+  .course_info p {
+    margin: 1.2rem 0 2rem;
+    font-size: 1rem;
+  }
+  .search_wrapper {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  /* footer */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+  body{
+      line-height: 1.5;
+      font-family: 'Poppins', sans-serif;
+  }
+  *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+  }
+  .containerr{
+      max-width: 1170px;
+      margin:auto;
+    
+  }
+  .row{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  ul{
+      list-style: none;
+  }
+  .footer{
+      background-color: #24262b;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 100%;
+     padding: 0 15px;
+     text-align: center;
+  }
+  .footer-col h4{
+      font-size: 18px;
+      color: #ffffff;
+      text-transform: capitalize;
+      margin-bottom: 35px;
+      font-weight: 500;
+      text-align: center;
+  
+  }
+  .footer-col h4::before{
+      content: '';
+      position: absolute;
+      left:0;
+      bottom: -10px;
+      height: 2px;
+      box-sizing: border-box;
+      width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+      margin-bottom: 10px;
+  }
+  .footer-col ul li {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 300;
+      color: #bbbbbb;
+      display: inline;
+      transition: all 0.3s ease;
+  }
+  
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }

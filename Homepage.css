@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+
+/* ------------------------NAVBAR-----------------------*/
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+nav {
+    background: var(--color-white);
+    width: 100vw; /* width akan ngambil keseluruhan width layar, apapun devicenya*/
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11; /* navbar akan selalu jadi paling atas, nilai besar semakin keatas, nilai kecil semakin kebawah*/
+  }
+  
+  .nav_containerr {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav_menu {
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    gap: 2rem;
+  }
+  
+  .nav_menu a {
+    font-size: 1.2rem;
+    transition: var(--transition);
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  .nav_menu a:hover {
+    text-shadow: 8px 8px 15px rgba(7, 60, 222, 0.9);
+  }
+  .b {
+    color: green;
+    background: #fff;
+    border-radius: 5px;
+  }
+  
+
+
+
+html, body {
+    margin:0;
+    padding: 0;
+    font-family: Montserrat
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    background-color:#e7d4c5;
+}
+
+.brand {
+    display:flex;
+    flex-direction:row;
+    font-size: 24px;
+    padding-right: 610px;
+    padding-left: 25px;
+}
+
+.name1 {
+    font-weight: bolder;
+    padding-left: 5px;
+}
+
+.name3 {
+    font-weight: bolder;
+}
+
+.name5 {
+    font-weight: bolder;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation>li {
+    list-style-type: none;
+    padding: 12px;
+    margin-bottom: 9px;
+}
+
+.navigation>li>a {
+    text-decoration: none;
+    color: black;
+    font-size: 13px; 
+}
+
+.navigation>li>a:hover {
+    color: white;
+    transition: all .4s ease-in-out;
+    text-shadow: 25px 25px 25px blue;
+}
+
+.button {
+    padding: 6px;
+    margin-left: 5px;
+    margin-bottom: 9px;
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    box-shadow: 8px 8px 20px grey;  
+    color: white;
+    transition: all .4s ease-in-out;   
+}
+
+.find>a {
+    padding: 9px;
+    margin-top: 30px;
+    border-radius: 15px;
+    width: 350px;
+    background-color: black;
+    color: white;
+}
+
+.find:hover {
+    box-shadow: 8px 8px 20px grey; 
+    color: white;
+    transition: all .4s ease-in-out;   
+}
+
+.find2 {
+    padding: 25px;
+    margin-top: 10px;
+    width: 250px;
+    border: none;
+    background-image: url(ss.png);
+    background-position: left;
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.find2:hover {
+    box-shadow: 8px 8px 20px grey; 
+    color: white;
+    transition: all .4s ease-in-out;   
+}
+
+.heading{
+    margin: 0px;
+    margin-left: 45px;
+    margin-top: 15px;
+
+}
+
+.wrap2 {
+    display:flex;
+    flex-direction: column;
+    padding-left: 49px;
+    padding-top: 45px;
+}
+
+.diferent {
+    color: #cca689;
+    font-weight: bolder;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.firstpage { 
+    background-image: url(coding.jpg);
+    background-size: 100%;
+    background-position:top;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
